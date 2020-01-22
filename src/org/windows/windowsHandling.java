@@ -37,7 +37,7 @@ public class windowsHandling {
 		String text = driver.findElement(By.xpath("//div[@class='you-pay']")).getText();
 		System.out.println(text);*/
 		
-		driver.get("https://www.homedepot.com/");
+	/*	driver.get("https://www.homedepot.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.id("headerSearch")).sendKeys("celiling fan");
 		driver.findElement(By.id("headerSearchButton")).click();
@@ -51,11 +51,27 @@ public class windowsHandling {
 		driver.findElement(By.xpath("(//span[@class='bttn__content'])[4]")).click();
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@allowtransparency='true']")));
 		String text = driver.findElement(By.xpath("//div[@class='u__husky']")).getText();
+driver.get("https://www.amazon.com/");
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("redmi note 7");
+			driver.findElement(By.xpath("(//input[@type='submit'])[1]")).click();
+			driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]")).click();
+			driver.findElement(By.id("add-to-cart-button")).click();
+			driver.findElement(By.id("hlb-ptc-btn-native")).click();
+			String s = driver.findElement(By.xpath("//h1[@class='a-size-large a-spacing-none']")).getText();
+			System.out.println(s);
 		System.out.println(text);
 		
 		driver.findElement(By.id("hello"));
 		driver.findElement(By.xpath("welcome"));
+
+		System.out.println(text);*/
+		
+
+			
+
 	}
 
 }
+
 
