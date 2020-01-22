@@ -52,6 +52,10 @@ public class windowsHandling {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@allowtransparency='true']")));
 		String text = driver.findElement(By.xpath("//div[@class='u__husky']")).getText();
 		System.out.println(text);
+		
+		driver.findElement(By.id("hello"));
+		driver.findElement(By.xpath("welcome"));
 	}
 
 }
+
