@@ -51,10 +51,7 @@ public class windowsHandling {
 		driver.findElement(By.xpath("(//span[@class='bttn__content'])[4]")).click();
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@allowtransparency='true']")));
 		String text = driver.findElement(By.xpath("//div[@class='u__husky']")).getText();
-		System.out.println(text);*/
-		
-
-			driver.get("https://www.amazon.com/");
+driver.get("https://www.amazon.com/");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("redmi note 7");
 			driver.findElement(By.xpath("(//input[@type='submit'])[1]")).click();
@@ -63,6 +60,16 @@ public class windowsHandling {
 			driver.findElement(By.id("hlb-ptc-btn-native")).click();
 			String s = driver.findElement(By.xpath("//h1[@class='a-size-large a-spacing-none']")).getText();
 			System.out.println(s);
+		System.out.println(text);
+		
+		driver.findElement(By.id("hello"));
+		driver.findElement(By.xpath("welcome"));
+
+		System.out.println(text);*/
+		
+
+			
+
 	}
 
 }
